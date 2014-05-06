@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.address_autocomplete_au,address_autocomplete_au
+
+[report]
+omit = */tests/*, */setup.py
