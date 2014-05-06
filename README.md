@@ -1,0 +1,2 @@
+trytond-address-autocomplete-au
+===============================
