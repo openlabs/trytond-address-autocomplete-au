@@ -7,6 +7,7 @@ before_install:
   - sudo apt-get install python-lxml
 install:
   - pip install -r dev_requirements.txt
+  - pip install coveralls
 script:
   - coverage run setup.py test
   - python setup.py test_on_postgres
@@ -15,3 +16,5 @@ script:
 notifications:
   email:
   - ci-notify@openlabs.co.in
+after_success:
+  coveralls    
