@@ -1,0 +1,20 @@
+language: python
+python:
+  - 2.7
+virtualenv:
+  system_site_packages: true
+before_install:
+  - sudo apt-get install python-lxml
+install:
+  - pip install -r dev_requirements.txt
+  - pip install coveralls
+script:
+  - coverage run setup.py test
+  - python setup.py test_on_postgres
+  - flake8 .
+  - coverage report -m --fail-under 100
+notifications:
+  email:
+  - ci-notify@openlabs.co.in
+after_success:
+  coveralls    
