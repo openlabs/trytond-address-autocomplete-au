@@ -5,8 +5,9 @@ Address auto completion for australia
     :target: https://travis-ci.org/openlabs/trytond-address-autocomplete-au
 
 
-.. image:: https://coveralls.io/repos/openlabs/trytond-address-autocomplete-au/badge.png
-    :target: https://coveralls.io/r/openlabs/trytond-address-autocomplete-au
+
+.. image:: https://coveralls.io/repos/openlabs/trytond-address-autocomplete-au/badge.png?branch=develop
+    :target: https://coveralls.io/r/openlabs/trytond-address-autocomplete-au?branch=develop
 
 
 This tryton module enhances the user experience in filling in addresses.
