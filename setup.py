@@ -73,7 +73,7 @@ requires = ['python-auspost']
 MODULE2PREFIX = {}
 
 MODULE = "address_autocomplete_au"
-PREFIX = "trytond"
+PREFIX = "openlabs"
 for dep in info.get('depends', []):
     if not re.match(r'(ir|res|webdav)(\W|$)', dep):
         requires.append(
